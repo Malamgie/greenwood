@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwoodspaces Furniture | Luxury Interior & Bespoke Craftsmanship Abuja</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Nigeria's premier luxury furniture manufacturer and interior design firm. We transform residential and commercial spaces with bespoke woodwork and architectural precision in Abuja.">
+    <meta name="keywords" content="Luxury Furniture Abuja, Custom Furniture Nigeria, Interior Design Abuja, Woodwork Abuja, Premium Interiors, Greenwoodspaces, Commercial Interiors Nigeria, Bespoke Furniture">
+    <meta name="author" content="Greenwoodspaces Furniture">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://greenwoodspaces.com/">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenwoodspaces.com/">
+    <meta property="og:title" content="Greenwoodspaces Furniture | Luxury Interior & Bespoke Craftsmanship">
+    <meta property="og:description" content="Elevating spaces with timeless elegance. Discover Nigeria's finest custom furniture and interior transformation services.">
+    <meta property="og:image" content="https://placehold.co/1200x630/232724/9A7E52?text=Greenwoodspaces+Luxury+Interiors">
+    
+    <!-- Theme & Icons -->
+    <meta name="theme-color" content="#232724">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>G</text></svg>">
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Greenwoodspaces Furniture",
+      "image": "https://greenwoodspaces.com/logo.webp",
+      "@id": "https://greenwoodspaces.com/",
+      "url": "https://greenwoodspaces.com/",
+      "telephone": "+2348182574055",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2nd Floor, Municipal Local Government, BEFS Plaza, Block 201, Utako",
+        "addressLocality": "Abuja",
+        "postalCode": "900108",
+        "addressRegion": "Federal Capital Territory",
+        "addressCountry": "NG"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 9.0667,
+        "longitude": 7.4333
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "14"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1C1C1C',
+                            charcoal: '#232724',
+                            light: '#F9F8F6',
+                            gold: '#9A7E52',
+                            goldhover: '#B59868',
+                            gray: '#E5E4E2'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '22': '5.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Premium CSS -->
+    <style>
+        :root {
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        body {
+            background-color: #F9F8F6;
+            color: #1C1C1C;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Cinematic Scroll Reveal Animations */
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo);
+        }
+        
+        .reveal-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+
+        .image-parallax-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-parallax {
+            transition: transform 1.5s var(--ease-out-expo);
+        }
+
+        .image-parallax-container:hover .image-parallax {
+            transform: scale(1.05);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F9F8F6; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #9A7E52; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #232724; 
+        }
+
+        /* Nav Transition */
+        .nav-scrolled {
+            background-color: rgba(249, 248, 246, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+        
+        .nav-scrolled.dark-mode {
+            background-color: rgba(35, 39, 36, 0.95);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .btn-primary {
+            position: relative;
+            overflow: hidden;
+            transition: color 0.4s ease;
+        }
+        
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #9A7E52;
+            transition: left 0.4s var(--ease-out-expo);
+            z-index: -1;
+        }
+
+        .btn-primary:hover::before {
+            left: 0;
+        }
+        
+        .btn-primary:hover {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="selection:bg-brand-gold selection:text-white relative">
+
+    <header id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 pt-6 pb-6 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="relative z-50 group flex items-center gap-3">
+                <!-- User specified strict usage of src="logo.webp" -->
+                <img src="logo.webp" alt="Greenwoodspaces Furniture Logo" class="h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-105" onerror="this.src='https://placehold.co/200x60/232724/F9F8F6?text=GREENWOODSPACES'">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="#expertise" class="text-sm font-medium tracking-wide uppercase hover:text-brand-gold transition-colors duration-300">Expertise</a>
+                <a href="#process" class="text-sm font-medium tracking-wide uppercase hover:text-brand-gold transition-colors duration-300">Craftsmanship</a>
+                <a href="#showroom" class="text-sm font-medium tracking-wide uppercase hover:text-brand-gold transition-colors duration-300">Showroom</a>
+                <a href="https://wa.me/2348182574055" target="_blank" rel="noopener noreferrer" class="group relative px-6 py-3 border border-brand-dark text-sm font-medium tracking-wide uppercase btn-primary z-10 flex items-center gap-2">
+                    <span>Consultation</span>
+                    <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden relative z-50 p-2 focus:outline-none" aria-label="Toggle Menu">
+                <div class="w-6 h-px bg-current mb-1.5 transition-all duration-300" id="line1"></div>
+                <div class="w-6 h-px bg-current transition-all duration-300" id="line2"></div>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-brand-light z-40 flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-500">
+            <nav class="flex flex-col items-center gap-8 text-center">
+                <a href="#expertise" class="mobile-link text-3xl font-serif hover:text-brand-gold transition-colors">Expertise</a>
+                <a href="#process" class="mobile-link text-3xl font-serif hover:text-brand-gold transition-colors">Craftsmanship</a>
+                <a href="#showroom" class="mobile-link text-3xl font-serif hover:text-brand-gold transition-colors">Showroom</a>
+                <a href="https://wa.me/2348182574055" target="_blank" class="mobile-link mt-8 px-8 py-4 bg-brand-dark text-white text-sm tracking-widest uppercase hover:bg-brand-gold transition-colors">Book Consultation</a>
+            </nav>
+            <div class="absolute bottom-10 flex flex-col items-center gap-2 text-sm text-brand-dark/60">
+                <span>0818 257 4055</span>
+                <span>Abuja, Nigeria</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative h-[100svh] w-full flex items-center justify-center overflow-hidden bg-brand-charcoal text-brand-light">
+            <!-- Hero Background Placeholder (Designed to look premium until real image is added) -->
+            <div class="absolute inset-0 z-0 opacity-40">
+                <img src="https://placehold.co/1920x1080/232724/1C1C1C?text=+" alt="Luxury Interior Background" class="w-full h-full object-cover object-center image-parallax transform scale-105" id="hero-bg">
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-charcoal/80 via-transparent to-brand-charcoal"></div>
+            </div>
+
+            <div class="relative z-10 text-center px-6 max-w-5xl mx-auto flex flex-col items-center mt-20">
+                <span class="reveal-up text-brand-gold text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mb-6 block">Abuja's Premier Furniture Manufacturer</span>
+                <h1 class="reveal-up reveal-delay-1 text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] mb-8">
+                    Crafting <span class="italic font-light">Timeless</span><br>Spaces
+                </h1>
+                <p class="reveal-up reveal-delay-2 text-lg md:text-xl text-brand-light/80 max-w-2xl mb-12 font-light">
+                    Elevating residential and commercial environments with bespoke woodwork, luxury interiors, and architectural precision.
+                </p>
+                <div class="reveal-up reveal-delay-3 flex flex-col sm:flex-row gap-6 items-center">
+                    <a href="https://wa.me/2348182574055" target="_blank" class="px-8 py-4 bg-brand-gold text-white text-sm font-medium tracking-widest uppercase hover:bg-brand-goldhover transition-colors duration-300">
+                        Start a Project
+                    </a>
+                    <a href="#expertise" class="text-sm font-medium tracking-widest uppercase border-b border-brand-light/30 pb-1 hover:border-brand-gold hover:text-brand-gold transition-colors duration-300">
+                        Explore Our Work
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-3 reveal-up reveal-delay-3 opacity-60">
+                <span class="text-xs tracking-widest uppercase">Scroll</span>
+                <div class="w-px h-12 bg-gradient-to-b from-brand-light to-transparent"></div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-32 px-6 md:px-12 bg-brand-light" id="philosophy">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+                    <div class="lg:col-span-5 reveal-up">
+                        <h2 class="text-3xl md:text-5xl font-serif leading-tight mb-8">
+                            Where craftsmanship meets <span class="text-brand-gold italic">architectural</span> sophistication.
+                        </h2>
+                        <!-- Trust Indicators -->
+                        <div class="flex items-center gap-4 mb-8 pt-6 border-t border-brand-dark/10">
+                            <div class="flex text-brand-gold text-lg">
+                                ★★★★★
+                            </div>
+                            <div class="text-sm font-medium">
+                                <span class="font-bold text-brand-dark">5.0 Google Rating</span> <span class="text-brand-dark/60">| Based on 14+ Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-7 reveal-up reveal-delay-1 flex flex-col gap-8 text-lg text-brand-dark/80 font-light leading-relaxed">
+                        <p>
+                            At Greenwoodspaces Furniture, we don't just build furniture; we engineer environments. Based in the heart of Abuja, we serve as the trusted partner for discerning homeowners, visionary architects, and premium commercial developers.
+                        </p>
+                        <p>
+                            Every piece we manufacture and every space we finish is a testament to uncompromising quality. By bridging traditional artisan techniques with modern manufacturing precision, we deliver bespoke solutions that look exceptional and endure for generations.
+                        </p>
+                        <a href="#showroom" class="text-brand-dark font-medium text-sm tracking-widest uppercase flex items-center gap-2 group w-max mt-4">
+                            Visit Our Showroom 
+                            <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-2 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-32 px-6 md:px-12 bg-brand-dark text-brand-light" id="expertise">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 reveal-up">
+                    <div class="max-w-2xl">
+                        <span class="text-brand-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">Our Expertise</span>
+                        <h2 class="text-4xl md:text-6xl font-serif">Mastery in Every Dimension.</h2>
+                    </div>
+                    <p class="text-brand-light/60 mt-6 md:mt-0 max-w-sm text-sm font-light">
+                        Tailored solutions designed to elevate your specific environment, from single bespoke pieces to comprehensive interior outfitting.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                    <!-- Service 1 -->
+                    <div class="group cursor-pointer reveal-up">
+                        <div class="image-parallax-container aspect-[3/4] mb-6 rounded-sm">
+                            <img src="https://placehold.co/600x800/232724/9A7E52?text=Bespoke+Furniture" alt="Custom Luxury Furniture" class="w-full h-full object-cover image-parallax">
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3 group-hover:text-brand-gold transition-colors">Bespoke Furniture</h3>
+                        <p class="text-brand-light/60 text-sm font-light leading-relaxed mb-4">
+                            Custom-designed and meticulously handcrafted furniture pieces tailored perfectly to your space, style, and functional requirements.
+                        </p>
+                        <div class="w-8 h-px bg-brand-gold transition-all duration-300 group-hover:w-16"></div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="group cursor-pointer reveal-up reveal-delay-1 md:mt-16">
+                        <div class="image-parallax-container aspect-[3/4] mb-6 rounded-sm">
+                            <img src="https://placehold.co/600x800/1C1C1C/9A7E52?text=Luxury+Interiors" alt="Interior Finishing" class="w-full h-full object-cover image-parallax">
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3 group-hover:text-brand-gold transition-colors">Interior Finishing</h3>
+                        <p class="text-brand-light/60 text-sm font-light leading-relaxed mb-4">
+                            Comprehensive space transformation including wall paneling, custom cabinetry, architectural millwork, and premium decor integrations.
+                        </p>
+                        <div class="w-8 h-px bg-brand-gold transition-all duration-300 group-hover:w-16"></div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group cursor-pointer reveal-up reveal-delay-2 lg:mt-32">
+                        <div class="image-parallax-container aspect-[3/4] mb-6 rounded-sm">
+                            <img src="https://placehold.co/600x800/232724/9A7E52?text=Commercial+Spaces" alt="Commercial Interiors" class="w-full h-full object-cover image-parallax">
+                        </div>
+                        <h3 class="text-2xl font-serif mb-3 group-hover:text-brand-gold transition-colors">Commercial & Hospitality</h3>
+                        <p class="text-brand-light/60 text-sm font-light leading-relaxed mb-4">
+                            High-durability, stunning aesthetic solutions for hotels, executive offices, restaurants, and premium retail environments.
+                        </p>
+                        <div class="w-8 h-px bg-brand-gold transition-all duration-300 group-hover:w-16"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-32 px-6 md:px-12 bg-brand-light relative" id="process">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20 reveal-up">
+                    <span class="text-brand-gold text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">The Process</span>
+                    <h2 class="text-4xl md:text-5xl font-serif">From Concept to Creation.</h2>
+                </div>
+
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-brand-dark/10 transform -translate-x-1/2"></div>
+
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between mb-16 md:mb-24 reveal-up">
+                        <div class="md:w-5/12 text-center md:text-right mb-6 md:mb-0 pr-0 md:pr-12">
+                            <h3 class="text-2xl font-serif mb-3">01. Consultation</h3>
+                            <p class="text-brand-dark/70 font-light text-sm">We begin by understanding your vision, space constraints, and functional needs. Whether over WhatsApp or in our showroom, your ideas take precedence.</p>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-gold items-center justify-center shadow-[0_0_0_8px_rgba(249,248,246,1)]"></div>
+                        <div class="md:w-5/12 pl-0 md:pl-12">
+                             <div class="image-parallax-container aspect-video rounded-sm shadow-lg">
+                                <img src="https://placehold.co/600x400/E5E4E2/232724?text=Consultation" alt="Consultation Process" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row-reverse items-center justify-between mb-16 md:mb-24 reveal-up">
+                        <div class="md:w-5/12 text-center md:text-left mb-6 md:mb-0 pl-0 md:pl-12">
+                            <h3 class="text-2xl font-serif mb-3">02. Design & Curation</h3>
+                            <p class="text-brand-dark/70 font-light text-sm">Our design team drafts precise technical layouts, selects premium materials, and presents a curated vision for your approval before manufacturing begins.</p>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-dark items-center justify-center shadow-[0_0_0_8px_rgba(249,248,246,1)]"></div>
+                        <div class="md:w-5/12 pr-0 md:pr-12">
+                             <div class="image-parallax-container aspect-video rounded-sm shadow-lg">
+                                <img src="https://placehold.co/600x400/232724/F9F8F6?text=Design" alt="Design Process" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between reveal-up">
+                        <div class="md:w-5/12 text-center md:text-right mb-6 md:mb-0 pr-0 md:pr-12">
+                            <h3 class="text-2xl font-serif mb-3">03. Craft & Installation</h3>
+                            <p class="text-brand-dark/70 font-light text-sm">Your pieces are meticulously built in our Abuja facility. Our expert team then handles the final installation, ensuring flawless integration into your space.</p>
+                        </div>
+                        <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-brand-gold items-center justify-center shadow-[0_0_0_8px_rgba(249,248,246,1)]"></div>
+                        <div class="md:w-5/12 pl-0 md:pl-12">
+                             <div class="image-parallax-container aspect-video rounded-sm shadow-lg">
+                                <img src="https://placehold.co/600x400/E5E4E2/232724?text=Craftsmanship" alt="Crafting Process" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-brand-gray/30 px-6 md:px-12">
+            <div class="max-w-5xl mx-auto text-center reveal-up">
+                <div class="flex justify-center gap-1 text-brand-gold text-2xl mb-6">
+                    ★★★★★
+                </div>
+                <h2 class="text-3xl md:text-4xl font-serif mb-12">"Excellence recognized by those who know."</h2>
+                
+                <div class="bg-white p-8 md:p-12 shadow-sm rounded-sm border border-brand-dark/5 relative">
+                    <div class="text-brand-gold text-6xl font-serif absolute top-4 left-6 opacity-20">"</div>
+                    <p class="text-lg md:text-xl font-light text-brand-dark/80 italic leading-relaxed relative z-10">
+                        Greenwoodspaces completely transformed our office interior. The attention to detail, the quality of the wood, and the professionalism of their installation team in Abuja was unmatched. They delivered a truly premium experience from start to finish.
+                    </p>
+                    <div class="mt-8 flex flex-col items-center">
+                        <div class="w-12 h-px bg-brand-gold mb-4"></div>
+                        <span class="font-semibold text-brand-dark">Premium Project Client</span>
+                        <span class="text-xs text-brand-dark/50 uppercase tracking-widest mt-1">Abuja, FCT</span>
+                    </div>
+                </div>
+                <div class="mt-8 text-sm font-medium text-brand-dark/60">
+                    Join our growing list of satisfied clients. Rated 5.0 on Google.
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 md:py-32 px-6 md:px-12 bg-brand-charcoal text-brand-light" id="showroom">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-up">
+                    <h2 class="text-4xl md:text-5xl font-serif mb-6">Visit Our Showroom.</h2>
+                    <p class="text-brand-light/70 font-light mb-10 max-w-md leading-relaxed">
+                        Experience the quality of our craftsmanship firsthand. Schedule a consultation or visit our Abuja location to discuss your next project.
+                    </p>
+                    
+                    <div class="flex flex-col gap-6 mb-12">
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-brand-gold shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Location</h4>
+                                <p class="text-brand-light/60 text-sm font-light leading-relaxed">
+                                    2nd Floor, Municipal Local Government,<br>
+                                    BEFS Plaza, Block 201, Utako,<br>
+                                    Abuja 900108, FCT, Nigeria
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-brand-gold shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Business Hours</h4>
+                                <p class="text-brand-light/60 text-sm font-light">
+                                    Open Daily • Closes 6:00 PM
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-brand-gold shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Direct Contact</h4>
+                                <a href="tel:08182574055" class="text-brand-light/60 text-sm font-light hover:text-brand-gold transition-colors block mb-1">0818 257 4055</a>
+                                <a href="https://wa.me/2348182574055" target="_blank" class="text-brand-gold text-sm font-medium hover:text-white transition-colors flex items-center gap-2">
+                                    Chat on WhatsApp
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal-up reveal-delay-1 h-[400px] bg-brand-dark rounded-sm overflow-hidden relative">
+                    <!-- Map/Showroom Placeholder -->
+                    <img src="https://placehold.co/800x800/1C1C1C/9A7E52?text=Showroom+Location" alt="Greenwoodspaces Showroom" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-500">
+                    <a href="https://maps.google.com/?q=BEFS+Plaza+Utako+Abuja" target="_blank" class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-brand-charcoal/40 transition-opacity duration-300">
+                        <span class="px-6 py-3 bg-brand-light text-brand-dark text-sm font-medium tracking-widest uppercase">Get Directions</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark border-t border-brand-light/10 pt-20 pb-10 px-6 md:px-12 text-brand-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <img src="logo.webp" alt="Greenwoodspaces Furniture" class="h-10 w-auto object-contain mb-6 brightness-0 invert opacity-90" onerror="this.src='https://placehold.co/200x60/1C1C1C/F9F8F6?text=GREENWOODSPACES'">
+                    <p class="text-brand-light/50 text-sm font-light max-w-sm leading-relaxed">
+                        Nigeria's premier luxury furniture manufacturer and interior design firm. We transform spaces with bespoke woodwork and architectural precision.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-brand-light font-semibold mb-6 text-sm tracking-widest uppercase">Navigation</h4>
+                    <ul class="flex flex-col gap-3 text-sm font-light text-brand-light/60">
+                        <li><a href="#expertise" class="hover:text-brand-gold transition-colors">Expertise</a></li>
+                        <li><a href="#process" class="hover:text-brand-gold transition-colors">Process & Craftsmanship</a></li>
+                        <li><a href="#showroom" class="hover:text-brand-gold transition-colors">Showroom</a></li>
+                        <li><a href="https://wa.me/2348182574055" class="hover:text-brand-gold transition-colors">Book Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-brand-light font-semibold mb-6 text-sm tracking-widest uppercase">Contact</h4>
+                    <ul class="flex flex-col gap-3 text-sm font-light text-brand-light/60">
+                        <li>WhatsApp: 0818 257 4055</li>
+                        <li>Phone: 0818 257 4055</li>
+                        <li>Abuja, FCT, Nigeria</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-brand-light/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-light/40 font-light">
+                <p>&copy; <span id="year"></span> Greenwoodspaces Furniture. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-brand-light transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-light transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dynamic Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Mobile Menu Logic
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const line1 = document.getElementById('line1');
+            const line2 = document.getElementById('line2');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+            let isMenuOpen = false;
+
+            function toggleMenu() {
+                isMenuOpen = !isMenuOpen;
+                if(isMenuOpen) {
+                    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                    line1.classList.add('rotate-45', 'translate-y-2');
+                    line2.classList.add('-rotate-45', '-translate-y-0.5');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling
+                } else {
+                    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                    line1.classList.remove('rotate-45', 'translate-y-2');
+                    line2.classList.remove('-rotate-45', '-translate-y-0.5');
+                    document.body.style.overflow = '';
+                }
+            }
+
+            menuBtn.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if(isMenuOpen) toggleMenu();
+                });
+            });
+
+            // Navbar Scroll Effect
+            const navbar = document.getElementById('navbar');
+            const heroSection = document.querySelector('section'); // First section
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    // Check background color behind navbar to determine text color needs
+                    const heroBottom = heroSection.getBoundingClientRect().bottom;
+                    if (heroBottom < 50) {
+                        // Past hero, over light sections usually
+                        navbar.classList.add('nav-scrolled');
+                        navbar.classList.remove('text-brand-light');
+                        navbar.classList.add('text-brand-dark');
+                    } else {
+                        // Still over dark hero
+                        navbar.classList.add('nav-scrolled', 'dark-mode');
+                        navbar.classList.add('text-brand-light');
+                        navbar.classList.remove('text-brand-dark');
+                    }
+                } else {
+                    navbar.classList.remove('nav-scrolled', 'dark-mode', 'text-brand-dark');
+                    navbar.classList.add('text-brand-light'); // Default top state over dark hero
+                }
+            });
+            
+            // Initial nav state
+            navbar.classList.add('text-brand-light');
+
+            // Cinematic Scroll Reveal Observer
+            const revealElements = document.querySelectorAll('.reveal-up');
+            
+            const revealOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => {
+                revealOnScroll.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
